@@ -75,4 +75,13 @@ $(function () {
             b = 0;
         }
     })
+
+    var chart = 0;
+    $('.sec1_chart').each(function () {
+        var chart_li = $(this).find('li')
+        $(chart_li).click(function(){
+            $(chart_li).removeClass('sec1_on');
+            $(this).addClass('sec1_on')
+        })
+    })
 })
