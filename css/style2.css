@@ -1,0 +1,199 @@
+/**************************** header **************************/
+.header {
+    width: 100%;
+    max-height: 70px;
+    align-items: center;
+    padding: 0 20px;
+    transition: all ease .5s;
+}
+
+.header::before {
+    content: '';
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    transition: height 0.5s;
+}
+
+.header:hover::before {
+    height: 230px;
+}
+
+.header .wrap {
+    justify-content: space-between;
+}
+
+.header.hide {
+    transform: translateY(-100%);
+}
+
+.header .header__gnb {
+    width: 50%;
+    transition: all 0.6s;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 999;
+}
+
+.header .header__logo {
+    width: 10%;
+    height: 100%;
+    align-items: center;
+    z-index: 999;
+    margin-top: 1%;
+}
+
+.header .header__gnb .header__lnb-name {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.header .header__gnb .header__lnb-name:hover,
+.header .header__gnb .header__lnb-list li:hover {
+    color: #E50019;
+}
+
+.header .header__gnb .header__gnb-list {
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+.header .header__gnb .header__lnb-list,
+.header .header__btn .header__language-options {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s;
+    margin-top: 15px;
+}
+
+.header .header__gnb .header__gnb-list .header__gnb-item,
+.header .header__btn .header__language {
+    position: relative;
+    padding: 20px 0;
+    flex: 1 0 auto;
+}
+
+.header .header__gnb:hover .header__gnb-list li:last-child {
+    margin-bottom: 0;
+}
+
+.header_on .header__gnb {
+    width: 65%;
+}
+
+.header_on .header__gnb .header__lnb-list,
+.header .header__btn .header__language:hover .header__language-options {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .header__btn {
+    width: 10%;
+    text-align: center;
+    z-index: 999;
+}
+
+.header__btn .header__language .header__current-language {
+    font-weight: 500;
+}
+
+.header__btn .header__language .header__language-options li:hover {
+    font-weight: 600;
+}
+
+.header__search-button {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 40px;
+}
+
+.header__search {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.header__search .header__search-input {
+    opacity: 0;
+    visibility: hidden;
+    width: 80%;
+    max-width: 1000px;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    transition: all 0.5s ease-in-out;
+    z-index: 99999999;
+}
+
+.header__search-on {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease-in-out;
+}
+
+.header__search-on .header__search-input {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+}
+
+.header__search .header__search-input form {
+    position: relative;
+    padding: 0 30px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.header__search .header__search-input form label {
+    width: 100%;
+}
+
+.header__search .header__search-input form input {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    color: #777;
+    height: 70px;
+}
+
+.header__search .header__search-input form input:focus {
+    outline: none;
+}
+
+.header__search .header__search-input form .header__search-submit {
+    width: 50px;
+}
+
+.header__search .header__search-input .header__search-close {
+    width: 40px;
+    position: absolute;
+    top: -65%;
+    left: 96%;
+    color: #FFFFFF;
+    filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(6570%) hue-rotate(188deg) brightness(115%) contrast(100%);
+}
+
+/**************************** section1 **************************/
+
+/**************************** section2 **************************/
+
+/**************************** section3 **************************/
+
+/**************************** section4 **************************/
+
+/**************************** section5 **************************/
+
+/**************************** section6 **************************/
+
+/**************************** footer **************************/

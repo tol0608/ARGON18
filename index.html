@@ -11,11 +11,8 @@
     <meta name="keywords" content="Argon18, Renewal">
     <meta name="author" content="이재현, LeeJaeHyeon">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.5, user-scalable=yes"/>
+          content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.5, user-scalable=yes">
     <!-- 해상도와 관련있는 태그 (기본 해상도), 모바일에서 동작, 최초의 스마트폰 기준으로 잡혀있음(320px) -->
-
-    <!--[if lt IE 9]>
-    <![endif]-->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="css/style2.css">
@@ -24,73 +21,81 @@
 </head>
 <body>
 <header>
-    <div class="header wrap">
-        <nav class="header__gnb">
-            <ul class="header__gnb-list">
-                <li class="header__gnb-item">
-                    <a href="#" class="header__lnb-name">ARGON18</a>
-                    <ul class="header__lnb-list">
-                        <li><a href="#">STORY</a></li>
-                        <li><a href="#">R&D</a></li>
-                        <li><a href="#">PRO</a></li>
-                        <li><a href="#">CAREERS</a></li>
-                        <li><a href="#">SPONSORSHIP</a></li>
-                    </ul>
-                </li>
-                <li class="header__gnb-item">
-                    <a href="#" class="header__lnb-name">BIKE</a>
-                    <ul class="header__lnb-list-list">
-                        <li><a href="#">ROAD</a></li>
-                        <li><a href="#">TRIATHLON(TT)</a></li>
-                        <li><a href="#">TRACK</a></li>
-                        <li><a href="#">Etc.</a></li>
-                    </ul>
-                </li>
-                <li class="header__gnb-item">
-                    <a href="#" class="header__lnb-name">SUPPORT</a>
-                    <ul class="header__lnb-list">
-                        <li><a href="#">NEWS</a></li>
-                        <li><a href="#">SERVICE & SPARE</a></li>
-                        <li><a href="#">COMING SOON</a></li>
-                        <li><a href="#">WARRANTY</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">DOWNLOADS</a></li>
-                    </ul>
-                </li>
-                <li class="header__gnb-item">
-                    <a href="#" class="header__lnb-name">JOIN THE RIDE</a>
-                    <ul class="header__lnb-list">
-                        <li><a href="#">ROAD</a></li>
-                        <li><a href="#">TRIATHLON(TT)</a></li>
-                        <li><a href="#">TRACK</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="header__btn">
-            <h1 class="header__logo"><a href="#"><img src="image/argon18_symbol.png" alt="Argon18로고"></a></h1>
-            <div class="header__language">
-                <p class="header__current-language">한국어</p>
-                <ul class="header__language-options">
-                    <li><a href="#">English</a></li>
-                    <li><a href="#">中語</a></li>
-                    <li><a href="#">日本語</a></li>
+    <div class="header fix-top">
+        <div class="wrap flx">
+            <div class="header__logo"><a href="#"><img src="image/argon18_symbol.png" alt="Argon18로고"></a></div>
+            <div class="header__gnb flx">
+                <ul class="header__gnb-list flx">
+                    <li class="header__gnb-item">
+                        <a href="#" class="header__lnb-name">ARGON18</a>
+                        <ul class="header__lnb-list">
+                            <li><a href="#">STORY</a></li>
+                            <li><a href="#">R&D</a></li>
+                            <li><a href="#">PRO</a></li>
+                            <li><a href="#">CAREERS</a></li>
+                            <li><a href="#">SPONSORSHIP</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__gnb-item">
+                        <a href="#" class="header__lnb-name">BIKE</a>
+                        <ul class="header__lnb-list">
+                            <li><a href="#">ROAD</a></li>
+                            <li><a href="#">TRIATHLON(TT)</a></li>
+                            <li><a href="#">TRACK</a></li>
+                            <li><a href="#">Etc.</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__gnb-item">
+                        <a href="#" class="header__lnb-name">SUPPORT</a>
+                        <ul class="header__lnb-list">
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">SERVICE & SPARE</a></li>
+                            <li><a href="#">COMING SOON</a></li>
+                            <li><a href="#">WARRANTY</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">DOWNLOADS</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__gnb-item">
+                        <a href="#" class="header__lnb-name">JOIN THE RIDE</a>
+                        <ul class="header__lnb-list">
+                            <li><a href="#">ROAD</a></li>
+                            <li><a href="#">TRIATHLON(TT)</a></li>
+                            <li><a href="#">TRACK</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            <div class="header__search">
-                <button class="header__search-button"></button>
-                <div class="header__search-input">
-                    <label>
-                        <input type="text" class="header__search-text" placeholder="검색">
-                    </label>
-                    <input type="button" value="검색" class="header__search-submit">
+            <div class="header__btn flx">
+                <div class="header__language">
+                    <a href="#" class="header__current-language">한국어</a>
+                    <ul class="header__language-options">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">中語</a></li>
+                        <li><a href="#">日本語</a></li>
+                    </ul>
                 </div>
+                <div>
+                    <button class="header__search-button"><img src="./image/4x/ico_search.png" alt="search_btn">
+                    </button>
+                </div>
+                <button class="header__menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <button class="header__menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        </div>
+    </div>
+    <div class="header__search">
+        <div class="header__search-input">
+            <form action="" class="flx">
+                <label>
+                    <input type="text" class="header__search-text" placeholder="검색어를 입력해주세요">
+                </label>
+                <button class="header__search-submit"><img src="./image/4x/ico_search.png" alt="submit_btn"></button>
+            </form>
+            <button class="header__search-close"><img src="./image/4x/ico_x.png" alt="X_btn"></button>
         </div>
     </div>
 </header>
@@ -207,7 +212,7 @@
 
 <section class="sec6">
     <div class="wrap">
-        <img src="image/newsletter_v5.jpg" alt="뉴스레터 신청">
+        <img src="./image/newsletter_v5.jpg" alt="뉴스레터 신청">
         <div class="sec6__newsletter-input">
             <label>
                 <input type="text" class="sec6__newsletter-text" placeholder="뉴스레터 신청하기">
@@ -216,16 +221,16 @@
         </div>
     </div>
     <div class="sec6__sns-icons">
-        <a href="#"><img src="image/SNS(50px)/instagram.png" alt="인스타그램"></a>
-        <a href="#"><img src="image/SNS(50px)/facebook.png" alt="페이스북"></a>
-        <a href="#"><img src="image/SNS(50px)/twitter.png" alt="트위터"></a>
-        <a href="#"><img src="image/SNS(50px)/youtube.png" alt="유튜브"></a>
-        <a href="#"><img src="image/SNS(50px)/strava.png" alt="스트라바"></a>
+        <a href="#"><img src="./image/SNS(50px)/instagram.png" alt="인스타그램"></a>
+        <a href="#"><img src="./image/SNS(50px)/facebook.png" alt="페이스북"></a>
+        <a href="#"><img src="./image/SNS(50px)/twitter.png" alt="트위터"></a>
+        <a href="#"><img src="./image/SNS(50px)/youtube.png" alt="유튜브"></a>
+        <a href="#"><img src="./image/SNS(50px)/strava.png" alt="스트라바"></a>
     </div>
 </section>
 
 <footer class="footer">
-    <div class="footer__wrap">
+    <div class="footer__wrap wrap">
         <div class="footer__left">
             <ul class="footer__ul">
                 <li>
@@ -280,8 +285,6 @@
 </footer>
 <!-- JS -->
 <script src="js/html5.js"></script>
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/jquery-migrate-3.0.0.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="js/main.js" type="text/javascript"></script>
 </body>
