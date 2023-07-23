@@ -27,5 +27,4 @@ document.addEventListener('DOMContentLoaded', function () {
     removeBox.addEventListener('click', function () {
         document.querySelector('.header__search-on').classList.remove('header__search-on');
     });
-
 });

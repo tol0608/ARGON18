@@ -1,4 +1,4 @@
-function createSwiper(container, slidesPerView, spaceBetween, autoplayDelay = 5000, vertical = false) {
+function createSwiper(container, slidesPerView, spaceBetween, autoplayDelay = 5000, vertical = false, loop = true) {
     return new Swiper(container, {
         slidesPerView: slidesPerView,
         effect: 'slide',
@@ -15,12 +15,13 @@ function createSwiper(container, slidesPerView, spaceBetween, autoplayDelay = 50
             prevEl: '.swiper-button-prev',
         },
         direction: vertical ? 'vertical' : 'horizontal',
+        observer: true,
+        observeParents: true
     });
 }
 
 var swiper1 = createSwiper(".mySwiper", 1, 20);
 var swiper2 = createSwiper(".mySwiper2", 1, 50, 5000, false);
-var swiper3 = createSwiper(".mySwiper3", 2, 0, 5000, true);
 var swiper4 = createSwiper(".mySwiper4", 1, 50, 3000);
 
 // breakpoints를 사용하려면 아래와 같이 추가하면 됩니다.
