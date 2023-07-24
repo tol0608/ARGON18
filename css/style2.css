@@ -45,7 +45,12 @@
     height: 100%;
     align-items: center;
     z-index: 999;
-    margin-top: 1%;
+    margin-top: 15px;
+}
+
+.header .header__logo img {
+    width: 100%;
+    max-width: 300px;
 }
 
 .header .header__gnb .header__lnb-name {
@@ -80,10 +85,6 @@
     flex: 1 0 auto;
 }
 
-/*.header .header__gnb .header__gnb-list .header__gnb-item {*/
-/*    width: calc(100%/4);*/
-/*}*/
-
 .header .header__gnb:hover .header__gnb-list li:last-child {
     margin-bottom: 0;
 }
@@ -114,8 +115,7 @@
 
 .header__search-button {
     margin-top: 15px;
-    width: 100%;
-    max-width: 40px;
+    width: 40px;
 }
 
 .header__search {
@@ -202,12 +202,36 @@
     filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(6570%) hue-rotate(188deg) brightness(115%) contrast(100%);
 }
 
+@media (max-width: 1600px) {
+    .header {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .header__gnb {
+        display: none;
+    }
+}
+
 /**************************** section1 **************************/
 .sec1 {
+    width: 100%;
     margin-bottom: 100px;
 }
 
+@media (max-width: 1080px) {
+    .sec1 {
+        margin-bottom: 30px;
+    }
+
+}
+
 /**************************** section2 **************************/
+.sec2 .on {
+    display: block;
+}
+
 .sec2__title {
     font-size: 3em;
     text-align: center;
@@ -284,9 +308,58 @@
     color: #E50019;
 }
 
-.sec2__description {
+.sec2__description, .sec2__description--off {
     font-size: 1.8em;
     font-weight: 500;
+}
+
+@media (max-width: 1080px) {
+    .sec2__title {
+        font-size: 2em;
+    }
+
+    .sec2__select-option__name, .sec2__select-result__name {
+        font-size: 1.8em;
+    }
+
+    .sec2__select-option__list, .sec2__select-option {
+        padding: 10px 30px;
+    }
+
+
+    .sec2__description, .sec2__description--off {
+        font-size: 1em;
+    }
+
+    .sec2__submit-button {
+        font-size: 0.8em;
+    }
+
+    .sec2__select-result {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec2__select-options .flx {
+        flex-direction: column;
+    }
+
+    .sec2__select-option__list, .sec2__select-option, .sec2__select-result {
+        width: 300px;
+        margin: 10px auto;
+    }
+
+    .sec2__button,
+    .sec2__select-result ul li {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .sec2__submit-button {
+        max-width: 400px;
+        font-size: 2em;
+    }
 }
 
 /**************************** section3 **************************/
@@ -316,7 +389,13 @@
     display: none;
 }
 
-/**************************** section4 **************************/
+@media (max-width: 1080px) {
+    .sec3 .swiper-sec {
+        margin-top: 40px;
+    }
+}
+
+    /**************************** section4 **************************/
 .sec4 .flx {
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -333,7 +412,7 @@
     width: 45%;
     overflow-y: auto;
     scroll-behavior: smooth;
-    background-color: #dddddd   ;
+    background-color: #dddddd;
 }
 
 .sec4__left-slider::-webkit-scrollbar {
